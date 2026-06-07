@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --maple: #9a2625;
+  --navy: #0a1428;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* Offset anchored sections so the sticky header doesn't cover headings */
+  scroll-padding-top: 5.5rem;
+}
+
+body {
+  @apply bg-white text-navy-900 antialiased;
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10;
+  }
+
+  .section {
+    @apply py-16 sm:py-20 lg:py-28;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 rounded-full border border-maple-100 bg-maple-50 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-maple-700;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-60;
+  }
+
+  .btn-primary {
+    @apply btn bg-maple-700 text-white shadow-soft hover:bg-maple-800 hover:shadow-lift focus-visible:ring-maple-700;
+  }
+
+  .btn-secondary {
+    @apply btn border border-navy-200 bg-white text-navy-900 hover:border-navy-300 hover:bg-mist-100 focus-visible:ring-navy-700;
+  }
+
+  .btn-ghost-light {
+    @apply btn bg-white/10 text-white ring-1 ring-inset ring-white/30 hover:bg-white/20 focus-visible:ring-white;
+  }
+
+  .card {
+    @apply rounded-2xl border border-mist-200 bg-white p-6 shadow-soft transition-all duration-200;
+  }
+
+  .card-hover {
+    @apply hover:-translate-y-1 hover:border-mist-300 hover:shadow-card;
+  }
+}
