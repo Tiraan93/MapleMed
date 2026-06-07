@@ -5,6 +5,7 @@ import Logo from "./Logo";
 
 const NAV_LINKS = [
   { label: "About", href: "#about" },
+  { label: "Why Canada?", href: "#why-canada" },
   { label: "Clinics", href: "#clinics" },
   { label: "For Doctors", href: "#doctors" },
   { label: "Process", href: "#process" },
@@ -46,7 +47,7 @@ export default function Header() {
 
         <nav
           aria-label="Primary"
-          className="hidden items-center gap-8 lg:flex"
+          className="hidden items-center gap-5 lg:flex xl:gap-7"
         >
           {NAV_LINKS.map((link) => (
             <a

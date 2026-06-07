@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
+import WhyCanadaSection from "@/components/WhyCanadaSection";
 import Clinics from "@/components/Clinics";
 import Doctors from "@/components/Doctors";
 import Process from "@/components/Process";
@@ -16,6 +17,7 @@ export default function Home() {
       <main>
         <Hero />
         <About />
+        <WhyCanadaSection />
         <Clinics />
         <Doctors />
         <Process />

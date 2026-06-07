@@ -30,6 +30,7 @@ export default function Footer() {
             </h3>
             <ul className="mt-4 space-y-2.5 text-sm">
               <li><a href="/#about" className="transition-colors hover:text-white">About</a></li>
+              <li><a href="/#why-canada" className="transition-colors hover:text-white">Why Canada?</a></li>
               <li><a href="/#clinics" className="transition-colors hover:text-white">Clinics</a></li>
               <li><a href="/#doctors" className="transition-colors hover:text-white">For Doctors</a></li>
               <li><a href="/#process" className="transition-colors hover:text-white">Process</a></li>
