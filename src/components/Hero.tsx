@@ -1,4 +1,4 @@
-import { MapleMark } from "./Logo";
+import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -6,12 +6,19 @@ export default function Hero() {
       id="top"
       className="relative overflow-hidden bg-navy-900 text-white"
     >
-      {/* Decorative background: subtle radial glows + maple-inspired pattern */}
+      {/* Background: the MapleMed logo, dimmed, with a navy gradient overlay
+          so the headline stays readable. */}
       <div aria-hidden="true" className="pointer-events-none absolute inset-0">
+        <Image
+          src="/maplemed-logo.png"
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center opacity-50 sm:object-right"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-navy-900 via-navy-900/90 to-navy-900/50" />
         <div className="absolute -left-24 -top-24 h-96 w-96 rounded-full bg-maple-700/20 blur-3xl" />
-        <div className="absolute -right-32 top-1/3 h-96 w-96 rounded-full bg-sky-500/10 blur-3xl" />
-        <MapleMark className="absolute right-6 top-28 h-40 w-40 opacity-[0.06] sm:right-16 lg:right-24" />
-        <MapleMark className="absolute -bottom-10 left-8 h-32 w-32 opacity-[0.05]" />
       </div>
 
       <div className="container-page relative pb-20 pt-32 sm:pb-24 lg:pb-32 lg:pt-40">
