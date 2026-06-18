@@ -12,7 +12,7 @@ const ROLE_OPTIONS = [
 ];
 
 type FormState = {
-  firstName: string;
+  fullName: string;
   email: string;
   role: string;
   message: string;
@@ -28,7 +28,7 @@ type Status = "idle" | "loading" | "success" | "error";
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 const INITIAL: FormState = {
-  firstName: "",
+  fullName: "",
   email: "",
   role: "",
   message: "",
@@ -44,8 +44,8 @@ export default function MailingListForm() {
 
   function validate(values: FormState): Errors {
     const next: Errors = {};
-    if (!values.firstName.trim()) {
-      next.firstName = "Please enter your full name.";
+    if (!values.fullName.trim()) {
+      next.fullName = "Please enter your full name.";
     }
     if (!values.email.trim()) {
       next.email = "Please enter your email address.";
@@ -84,7 +84,7 @@ export default function MailingListForm() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          firstName: form.firstName.trim(),
+          fullName: form.fullName.trim(),
           email: form.email.trim(),
           role: form.role,
           message: form.message.trim(),
@@ -171,21 +171,21 @@ export default function MailingListForm() {
 
       <div className="grid gap-5 sm:grid-cols-2">
         <Field
-          id="firstName"
+          id="fullName"
           label="Full name"
           required
-          error={errors.firstName}
+          error={errors.fullName}
         >
           <input
-            id="firstName"
-            name="firstName"
+            id="fullName"
+            name="fullName"
             type="text"
             autoComplete="name"
-            value={form.firstName}
-            onChange={(e) => update("firstName", e.target.value)}
-            aria-invalid={!!errors.firstName}
-            aria-describedby={errors.firstName ? "firstName-error" : undefined}
-            className={inputClass(!!errors.firstName)}
+            value={form.fullName}
+            onChange={(e) => update("fullName", e.target.value)}
+            aria-invalid={!!errors.fullName}
+            aria-describedby={errors.fullName ? "fullName-error" : undefined}
+            className={inputClass(!!errors.fullName)}
             placeholder="Jane Smith"
           />
         </Field>

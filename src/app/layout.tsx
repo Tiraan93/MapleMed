@@ -8,7 +8,7 @@ const inter = Inter({
   display: "swap",
 });
 
-const SITE_URL = "https://maplemed.co";
+const SITE_URL = "https://maplemedic.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

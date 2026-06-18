@@ -13,14 +13,14 @@ export default function Footer() {
               Developing modern clinics in Canada with UK-trained medical talent.
             </p>
             <a
-              href="mailto:hello@maplemed.co"
+              href="mailto:tiraan@maplemedic.com"
               className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-white transition-colors hover:text-maple-400"
             >
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                 <rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" strokeWidth="1.7" />
                 <path d="m4 7 8 6 8-6" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
-              hello@maplemed.co
+              tiraan@maplemedic.com
             </a>
           </div>
 
@@ -45,7 +45,7 @@ export default function Footer() {
             <ul className="mt-4 space-y-2.5 text-sm">
               <li><a href="/privacy" className="transition-colors hover:text-white">Privacy Policy</a></li>
               <li><a href="/privacy#terms" className="transition-colors hover:text-white">Terms</a></li>
-              <li><a href="mailto:hello@maplemed.co" className="transition-colors hover:text-white">Contact</a></li>
+              <li><a href="mailto:tiraan@maplemedic.com" className="transition-colors hover:text-white">Contact</a></li>
             </ul>
           </div>
         </div>

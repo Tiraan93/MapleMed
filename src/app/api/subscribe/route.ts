@@ -17,7 +17,7 @@ const ROLE_LABELS: Record<string, string> = {
 };
 
 type SubscribeBody = {
-  firstName?: string;
+  fullName?: string;
   email?: string;
   role?: string;
   message?: string;
@@ -36,7 +36,7 @@ export async function POST(request: Request) {
     );
   }
 
-  const firstName = (body.firstName || "").trim();
+  const fullName = (body.fullName || "").trim();
   const email = (body.email || "").trim().toLowerCase();
   const role = (body.role || "").trim();
   const message = (body.message || "").trim();
@@ -50,9 +50,9 @@ export async function POST(request: Request) {
   }
 
   // Server-side validation mirrors the client form.
-  if (!firstName) {
+  if (!fullName) {
     return NextResponse.json(
-      { ok: false, error: "First name is required." },
+      { ok: false, error: "Full name is required." },
       { status: 400 }
     );
   }
@@ -79,8 +79,11 @@ export async function POST(request: Request) {
   const listId = process.env.BREVO_LIST_ID;
 
   // Attributes stored against the contact in Brevo.
+  // NOTE: FULLNAME is a custom attribute — create it once in Brevo under
+  // Contacts -> Settings -> Contact Attributes (type "Text"), otherwise Brevo
+  // rejects the contact with an "invalid attributes" error.
   const attributes = {
-    FIRSTNAME: firstName,
+    FULLNAME: fullName,
     ROLE: ROLE_LABELS[role],
     MESSAGE: message,
     SOURCE: "MapleMedic website",

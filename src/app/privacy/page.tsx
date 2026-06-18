@@ -91,10 +91,10 @@ export default function PrivacyPage() {
               <p>
                 For any privacy questions or requests, contact us at{" "}
                 <a
-                  href="mailto:hello@maplemed.co"
+                  href="mailto:tiraan@maplemedic.com"
                   className="font-medium text-maple-700 underline hover:text-maple-800"
                 >
-                  hello@maplemed.co
+                  tiraan@maplemedic.com
                 </a>
                 .
               </p>
