@@ -4,9 +4,9 @@ import Logo from "@/components/Logo";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | MapleMed",
+  title: "Privacy Policy | MapleMedic",
   description:
-    "How MapleMed collects, uses and protects the information you share when registering interest.",
+    "How MapleMedic collects, uses and protects the information you share when registering interest.",
   robots: { index: true, follow: true },
   alternates: { canonical: "/privacy" },
 };
@@ -18,7 +18,7 @@ export default function PrivacyPage() {
     <>
       <header className="border-b border-mist-200 bg-white">
         <div className="container-page flex h-16 items-center justify-between lg:h-20">
-          <Link href="/" aria-label="MapleMed home">
+          <Link href="/" aria-label="MapleMedic home">
             <Logo />
           </Link>
           <Link href="/" className="btn-secondary">
@@ -40,14 +40,14 @@ export default function PrivacyPage() {
           <div className="prose-content mt-10 space-y-8 text-navy-700">
             <section>
               <p className="leading-relaxed">
-                This Privacy Policy explains how MapleMed handles the information
+                This Privacy Policy explains how MapleMedic handles the information
                 you provide when you register interest or join our mailing list.
                 We keep this simple and only collect what we need.
               </p>
             </section>
 
             <Block title="Information we collect">
-              <p>When you register interest, MapleMed collects:</p>
+              <p>When you register interest, MapleMedic collects:</p>
               <ul className="mt-3 list-disc space-y-1.5 pl-5">
                 <li>Your name</li>
                 <li>Your email address</li>
@@ -59,14 +59,14 @@ export default function PrivacyPage() {
             <Block title="How we use your information">
               <p>We use the information you provide to:</p>
               <ul className="mt-3 list-disc space-y-1.5 pl-5">
-                <li>Send you updates about MapleMed clinics and recruitment plans</li>
+                <li>Send you updates about MapleMedic clinics and recruitment plans</li>
                 <li>Manage and respond to your expression of interest</li>
               </ul>
             </Block>
 
             <Block title="We do not sell your data">
               <p>
-                MapleMed does not sell your personal information to third
+                MapleMedic does not sell your personal information to third
                 parties. Your details are used only for the purposes described
                 in this policy.
               </p>
@@ -74,7 +74,7 @@ export default function PrivacyPage() {
 
             <Block title="Email updates and unsubscribing">
               <p>
-                You can unsubscribe from MapleMed emails at any time using the
+                You can unsubscribe from MapleMedic emails at any time using the
                 unsubscribe link in any message we send, or by contacting us at
                 the email below.
               </p>
@@ -105,7 +105,7 @@ export default function PrivacyPage() {
                 Terms
               </h2>
               <p className="mt-3 leading-relaxed">
-                Information provided on this website is general only. MapleMed is
+                Information provided on this website is general only. MapleMedic is
                 not a medical regulator, immigration adviser or government body,
                 and nothing on this site guarantees employment, medical
                 licensing or immigration outcomes. Official licensing,

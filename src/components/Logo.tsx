@@ -3,18 +3,18 @@ import Image from "next/image";
 type LogoProps = {
   /** Render light text for use on dark backgrounds (footer, hero). */
   variant?: "dark" | "light";
-  /** Hide the "MapleMed" wordmark and show only the mark. */
+  /** Hide the "MapleMedic" wordmark and show only the mark. */
   markOnly?: boolean;
   className?: string;
 };
 
 /**
- * MapleMed brand logo.
+ * MapleMedic brand logo.
  *
- * Uses the official MapleMed artwork (public/maplemed-logo.png) — a white
+ * Uses the official MapleMedic artwork (public/maplemed-logo.png) — a white
  * maple leaf with a curved stem and a medical cross — presented inside a
  * subtle dark "badge" so it reads cleanly on both light and dark surfaces.
- * Paired with the "MapleMed" wordmark.
+ * Paired with the "MapleMedic" wordmark.
  */
 export default function Logo({
   variant = "dark",
@@ -29,20 +29,20 @@ export default function Logo({
       {!markOnly && (
         <span className="text-xl font-bold tracking-tight">
           <span className="text-maple-700">Maple</span>
-          <span style={{ color: wordPrimary }}>Med</span>
+          <span style={{ color: wordPrimary }}>Medic</span>
         </span>
       )}
     </span>
   );
 }
 
-/** The official MapleMed mark inside a dark rounded badge. */
+/** The official MapleMedic mark inside a dark rounded badge. */
 function LogoBadge() {
   return (
     <span className="inline-flex h-10 w-10 items-center justify-center overflow-hidden rounded-xl bg-navy-950 ring-1 ring-white/10">
       <Image
         src="/maplemed-logo.png"
-        alt="MapleMed logo"
+        alt="MapleMedic logo"
         width={120}
         height={180}
         priority
@@ -62,7 +62,7 @@ export function MapleMark({ className = "" }: { className?: string }) {
     <svg
       viewBox="0 0 56 58"
       role="img"
-      aria-label="MapleMed logo"
+      aria-label="MapleMedic logo"
       className={className}
       fill="currentColor"
       xmlns="http://www.w3.org/2000/svg"

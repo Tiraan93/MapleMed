@@ -4,28 +4,28 @@ import { useState } from "react";
 
 const FAQS = [
   {
-    q: "What is MapleMed?",
-    a: "MapleMed is a healthcare company developing modern clinics in Canada and recruiting UK-qualified and international medical professionals to support high-quality patient care.",
+    q: "What is MapleMedic?",
+    a: "MapleMedic is a healthcare company developing modern clinics in Canada and recruiting UK-qualified and international medical professionals to support high-quality patient care.",
   },
   {
-    q: "Is MapleMed a recruitment agency?",
-    a: "MapleMed is not only a recruitment agency. The company is focused on building and operating its own clinics in Canada and recruiting doctors to join MapleMed clinics.",
+    q: "Is MapleMedic a recruitment agency?",
+    a: "MapleMedic is not only a recruitment agency. The company is focused on building and operating its own clinics in Canada and recruiting doctors to join MapleMedic clinics.",
   },
   {
-    q: "Can MapleMed guarantee a job in Canada?",
-    a: "No. MapleMed can share updates and consider candidates for future opportunities, but employment depends on clinic needs, candidate suitability and eligibility checks.",
+    q: "Can MapleMedic guarantee a job in Canada?",
+    a: "No. MapleMedic can share updates and consider candidates for future opportunities, but employment depends on clinic needs, candidate suitability and eligibility checks.",
   },
   {
-    q: "Can MapleMed guarantee Canadian medical registration?",
+    q: "Can MapleMedic guarantee Canadian medical registration?",
     a: "No. Medical registration is handled by the relevant Canadian medical regulatory authorities and varies by province or territory.",
   },
   {
-    q: "Can MapleMed help with visas or immigration?",
-    a: "MapleMed may share general information, but immigration advice and decisions must come from official sources or qualified immigration professionals.",
+    q: "Can MapleMedic help with visas or immigration?",
+    a: "MapleMedic may share general information, but immigration advice and decisions must come from official sources or qualified immigration professionals.",
   },
   {
     q: "Who should join the mailing list?",
-    a: "UK-qualified doctors, international doctors, Canadian healthcare professionals and potential partners interested in MapleMed’s future clinic plans can register for updates.",
+    a: "UK-qualified doctors, international doctors, Canadian healthcare professionals and potential partners interested in MapleMedic’s future clinic plans can register for updates.",
   },
 ];
 
@@ -41,7 +41,7 @@ export default function FAQ() {
             Frequently asked questions
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-navy-600">
-            Clear, honest answers about what MapleMed is — and what it is not.
+            Clear, honest answers about what MapleMedic is — and what it is not.
           </p>
         </div>
 

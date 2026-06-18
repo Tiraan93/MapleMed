@@ -12,34 +12,39 @@ const SITE_URL = "https://maplemed.co";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "MapleMed | Modern Clinics in Canada with UK-Trained Doctors",
+  title: "MapleMedic | Modern Clinics in Canada with UK-Trained Doctors",
   description:
-    "MapleMed is developing healthcare clinics in Canada and recruiting UK-qualified doctors and international medical professionals to support high-quality patient care.",
+    "MapleMedic is developing healthcare clinics in Canada and recruiting UK-qualified doctors and international medical professionals to support high-quality patient care.",
   keywords: [
-    "MapleMed",
+    "MapleMedic",
     "Canada clinics",
     "UK-trained doctors",
     "medical careers Canada",
     "international doctors Canada",
     "healthcare recruitment",
   ],
-  authors: [{ name: "MapleMed" }],
+  authors: [{ name: "MapleMedic" }],
   alternates: {
     canonical: "/",
+  },
+  icons: {
+    icon: [{ url: "/favicon.svg?v=3", type: "image/svg+xml" }],
+    shortcut: "/favicon.svg?v=3",
+    apple: "/favicon.svg?v=3",
   },
   openGraph: {
     type: "website",
     url: SITE_URL,
-    siteName: "MapleMed",
-    title: "MapleMed | Modern Clinics in Canada with UK-Trained Doctors",
+    siteName: "MapleMedic",
+    title: "MapleMedic | Modern Clinics in Canada with UK-Trained Doctors",
     description:
-      "MapleMed is developing healthcare clinics in Canada and recruiting UK-qualified doctors and international medical professionals to support high-quality patient care.",
+      "MapleMedic is developing healthcare clinics in Canada and recruiting UK-qualified doctors and international medical professionals to support high-quality patient care.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "MapleMed | Modern Clinics in Canada with UK-Trained Doctors",
+    title: "MapleMedic | Modern Clinics in Canada with UK-Trained Doctors",
     description:
-      "MapleMed is developing healthcare clinics in Canada and recruiting UK-qualified doctors and international medical professionals to support high-quality patient care.",
+      "MapleMedic is developing healthcare clinics in Canada and recruiting UK-qualified doctors and international medical professionals to support high-quality patient care.",
   },
   robots: {
     index: true,

@@ -1,10 +1,9 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import About from "@/components/About";
-import WhyCanadaSection from "@/components/WhyCanadaSection";
-import Clinics from "@/components/Clinics";
-import Doctors from "@/components/Doctors";
-import Process from "@/components/Process";
+import MissionVision from "@/components/MissionVision";
+import Difference from "@/components/Difference";
+import HowItWorks from "@/components/HowItWorks";
+import OurStory from "@/components/OurStory";
 import Join from "@/components/Join";
 import FAQ from "@/components/FAQ";
 import Trust from "@/components/Trust";
@@ -16,11 +15,10 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <About />
-        <WhyCanadaSection />
-        <Clinics />
-        <Doctors />
-        <Process />
+        <MissionVision />
+        <Difference />
+        <HowItWorks />
+        <OurStory />
         <Join />
         <FAQ />
         <Trust />

@@ -2,7 +2,7 @@ import MailingListForm from "./MailingListForm";
 import { MapleMark } from "./Logo";
 
 const HIGHLIGHTS = [
-  "Updates on MapleMed clinic development",
+  "Updates on MapleMedic clinic development",
   "News on recruitment plans and timelines",
   "General guidance on pathway considerations",
   "Early access to future opportunities",
@@ -20,7 +20,7 @@ export default function Join() {
           <div>
             <span className="eyebrow">Register interest</span>
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy-900 sm:text-4xl">
-              Join the MapleMed mailing list
+              Join the MapleMedic mailing list
             </h2>
             <p className="mt-4 text-lg leading-relaxed text-navy-600">
               Be part of our early network. Whether you&apos;re a doctor exploring

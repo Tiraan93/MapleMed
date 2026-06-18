@@ -83,7 +83,7 @@ export async function POST(request: Request) {
     FIRSTNAME: firstName,
     ROLE: ROLE_LABELS[role],
     MESSAGE: message,
-    SOURCE: "MapleMed website",
+    SOURCE: "MapleMedic website",
     CONSENT: true,
     CONSENT_DATE: new Date().toISOString(),
   };

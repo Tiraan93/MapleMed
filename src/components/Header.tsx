@@ -4,11 +4,10 @@ import { useEffect, useState } from "react";
 import Logo from "./Logo";
 
 const NAV_LINKS = [
-  { label: "About", href: "#about" },
-  { label: "Why Canada?", href: "#why-canada" },
-  { label: "Clinics", href: "#clinics" },
-  { label: "For Doctors", href: "#doctors" },
-  { label: "Process", href: "#process" },
+  { label: "Mission + Vision", href: "#mission" },
+  { label: "The Difference", href: "#difference" },
+  { label: "How It Works", href: "#how-it-works" },
+  { label: "Our Story", href: "#our-story" },
   { label: "FAQ", href: "#faq" },
   { label: "Join", href: "#join" },
 ];
@@ -41,7 +40,7 @@ export default function Header() {
       }`}
     >
       <div className="container-page flex h-16 items-center justify-between lg:h-20">
-        <a href="#top" aria-label="MapleMed home" className="shrink-0">
+        <a href="#top" aria-label="MapleMedic home" className="shrink-0">
           <Logo />
         </a>
 

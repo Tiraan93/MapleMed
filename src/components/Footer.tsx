@@ -29,11 +29,10 @@ export default function Footer() {
               Explore
             </h3>
             <ul className="mt-4 space-y-2.5 text-sm">
-              <li><a href="/#about" className="transition-colors hover:text-white">About</a></li>
-              <li><a href="/#why-canada" className="transition-colors hover:text-white">Why Canada?</a></li>
-              <li><a href="/#clinics" className="transition-colors hover:text-white">Clinics</a></li>
-              <li><a href="/#doctors" className="transition-colors hover:text-white">For Doctors</a></li>
-              <li><a href="/#process" className="transition-colors hover:text-white">Process</a></li>
+              <li><a href="/#mission" className="transition-colors hover:text-white">Mission + Vision</a></li>
+              <li><a href="/#difference" className="transition-colors hover:text-white">The MapleMedic Difference</a></li>
+              <li><a href="/#how-it-works" className="transition-colors hover:text-white">How It Works</a></li>
+              <li><a href="/#our-story" className="transition-colors hover:text-white">Our Story</a></li>
               <li><a href="/#faq" className="transition-colors hover:text-white">FAQ</a></li>
               <li><a href="/#join" className="transition-colors hover:text-white">Register Interest</a></li>
             </ul>
@@ -53,12 +52,12 @@ export default function Footer() {
 
         <div className="mt-12 border-t border-navy-800 pt-8">
           <p className="text-xs leading-relaxed text-mist-300">
-            MapleMed is not a medical regulator, immigration adviser or government
+            MapleMedic is not a medical regulator, immigration adviser or government
             body. Information provided is general only and does not guarantee
             employment, licensing or immigration outcomes.
           </p>
           <p className="mt-4 text-xs text-mist-300">
-            &copy; {year} MapleMed. All rights reserved.
+            &copy; {year} MapleMedic. All rights reserved.
           </p>
         </div>
       </div>

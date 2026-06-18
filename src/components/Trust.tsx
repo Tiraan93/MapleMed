@@ -1,6 +1,6 @@
 const POINTS = [
-  "MapleMed is not a medical regulator.",
-  "MapleMed is not an immigration adviser.",
+  "MapleMedic is not a medical regulator.",
+  "MapleMedic is not an immigration adviser.",
   "Information on the website is general only.",
   "Official licensing, immigration and employment requirements must be checked with the relevant authorities.",
   "Mailing list subscribers can unsubscribe at any time.",
@@ -18,7 +18,7 @@ export default function Trust() {
             Responsible and transparent
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-mist-200">
-            We are clear about our role. MapleMed shares general information and
+            We are clear about our role. MapleMedic shares general information and
             keeps interested people updated — official decisions always rest with
             the relevant authorities.
           </p>

@@ -45,7 +45,7 @@ export default function MailingListForm() {
   function validate(values: FormState): Errors {
     const next: Errors = {};
     if (!values.firstName.trim()) {
-      next.firstName = "Please enter your first name.";
+      next.firstName = "Please enter your full name.";
     }
     if (!values.email.trim()) {
       next.email = "Please enter your email address.";
@@ -132,7 +132,7 @@ export default function MailingListForm() {
           You&apos;re on the list
         </h3>
         <p className="mt-2 text-navy-600">
-          Thanks for registering your interest in MapleMed. We&apos;ll be in
+          Thanks for registering your interest in MapleMedic. We&apos;ll be in
           touch with updates on our clinics and recruitment plans. You can
           unsubscribe at any time.
         </p>
@@ -172,7 +172,7 @@ export default function MailingListForm() {
       <div className="grid gap-5 sm:grid-cols-2">
         <Field
           id="firstName"
-          label="First name"
+          label="Full name"
           required
           error={errors.firstName}
         >
@@ -180,13 +180,13 @@ export default function MailingListForm() {
             id="firstName"
             name="firstName"
             type="text"
-            autoComplete="given-name"
+            autoComplete="name"
             value={form.firstName}
             onChange={(e) => update("firstName", e.target.value)}
             aria-invalid={!!errors.firstName}
             aria-describedby={errors.firstName ? "firstName-error" : undefined}
             className={inputClass(!!errors.firstName)}
-            placeholder="Jane"
+            placeholder="Jane Smith"
           />
         </Field>
 
@@ -252,7 +252,7 @@ export default function MailingListForm() {
             className="mt-1 h-5 w-5 shrink-0 rounded border-navy-300 text-maple-700 focus:ring-maple-700"
           />
           <span className="text-sm leading-relaxed text-navy-600">
-            I agree to receive email updates from MapleMed. I understand I can
+            I agree to receive email updates from MapleMedic. I understand I can
             unsubscribe at any time.
           </span>
         </label>
