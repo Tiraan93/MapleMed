@@ -176,4 +176,3 @@ ${usedDescriptors.map((d) => `- ${d}`).join("\n")}`;
 
 export const SYSTEM_TEAM_GUIDANCE = `When Competent and/or Excellent descriptor levels are selected, write achievements appropriate to the chosen level without inventing unsupported team roles or referrals.`;
 
-

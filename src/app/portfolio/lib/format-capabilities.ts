@@ -19,4 +19,3 @@ export function formatCapabilitiesForCopy(review: PortfolioReview): string {
   return formatCapabilitiesForDisplay(review);
 }
 
-

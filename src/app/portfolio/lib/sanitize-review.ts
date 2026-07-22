@@ -28,4 +28,3 @@ export function collectDescriptorTexts(review: PortfolioReview): string[] {
   );
 }
 
-

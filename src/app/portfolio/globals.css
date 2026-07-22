@@ -1,8 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* Fonts: bundled system stack (avoids Google Fonts fetch blocked by local SSL) */
+/* Portfolio-specific CSS variables and styles */
 :root {
   --font-jakarta: "Segoe UI", "Helvetica Neue", Arial, system-ui, sans-serif;
   --font-dm-serif: Georgia, "Times New Roman", "DM Serif Display", serif;
@@ -15,7 +11,7 @@
   --card-warm: #f6effb;
   --border: #d9c5e5;
   --border-light: #ede3f4;
-  --navy: #1f1832;
+  --portfolio-navy: #1f1832;
   --accent: #b16aba;
   --accent-dark: #8f3e9a;
   --accent-light: #dfc2ec;
@@ -31,39 +27,6 @@
   --error-bg: #fbeaf7;
   --error-border: #e8c4dd;
   --error-text: #7f3f75;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-background-alt: var(--background-alt);
-  --color-foreground: var(--foreground);
-  --color-muted: var(--muted);
-  --color-muted-light: var(--muted-light);
-  --color-card: var(--card);
-  --color-card-warm: var(--card-warm);
-  --color-border: var(--border);
-  --color-border-light: var(--border-light);
-  --color-navy: var(--navy);
-  --color-accent: var(--accent);
-  --color-accent-dark: var(--accent-dark);
-  --color-accent-light: var(--accent-light);
-  --color-cta: var(--cta);
-  --color-cta-hover: var(--cta-hover);
-  --color-cta-soft: var(--cta-soft);
-  --color-success-bg: var(--success-bg);
-  --color-success-border: var(--success-border);
-  --color-success-text: var(--success-text);
-  --color-warning-bg: var(--warning-bg);
-  --color-warning-border: var(--warning-border);
-  --color-warning-text: var(--warning-text);
-  --color-error-bg: var(--error-bg);
-  --color-error-border: var(--error-border);
-  --color-error-text: var(--error-text);
-  /* Legacy alias used in components */
-  --color-accent-coral: var(--cta);
-  --color-accent-coral-dark: var(--cta-hover);
-  --font-sans: var(--font-jakarta);
-  --font-serif: var(--font-dm-serif);
 }
 
 body {

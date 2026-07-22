@@ -166,4 +166,3 @@ ${instruction}
 Return only the improved ${sectionLabel} text in first person.`;
 }
 
-
