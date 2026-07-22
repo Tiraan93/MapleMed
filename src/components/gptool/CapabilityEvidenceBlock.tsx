@@ -15,6 +15,23 @@ type CapabilityEvidenceBlockProps = {
 
 const DEFAULT_INSTRUCTION = "Make more concise and portfolio ready";
 
+function splitDescriptorSentence(text: string): {
+  descriptorSentence: string;
+  caseEvidence: string;
+} {
+  const trimmed = text.trim();
+  const match = trimmed.match(/^([\s\S]*?[.!?])(?:\s+|$)([\s\S]*)$/);
+
+  if (!match) {
+    return { descriptorSentence: trimmed, caseEvidence: "" };
+  }
+
+  return {
+    descriptorSentence: match[1],
+    caseEvidence: match[2].trim(),
+  };
+}
+
 function ImproveBox({
   instruction,
   setInstruction,
@@ -94,6 +111,9 @@ export function CapabilityEvidenceBlock({
       <ul className="flex flex-col gap-4">
         {capability.evidence.map((item, index) => {
           const id = `${capability.name}-${index}`;
+          const { descriptorSentence, caseEvidence } = splitDescriptorSentence(
+            item.achievement,
+          );
           return (
             <li key={id} className="text-sm leading-relaxed">
               <div className="mb-2 flex justify-end gap-2">
@@ -116,7 +136,8 @@ export function CapabilityEvidenceBlock({
                   </button>
               </div>
               <p className="whitespace-pre-wrap rounded-md bg-background px-3 py-3 text-foreground/90">
-                {item.achievement}
+                <span className="italic">{descriptorSentence}</span>
+                {caseEvidence ? ` ${caseEvidence}` : null}
               </p>
               {improveOpen === index && onImproveEvidence && (
                 <ImproveBox

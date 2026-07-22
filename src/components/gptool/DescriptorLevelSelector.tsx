@@ -53,7 +53,9 @@ export function DescriptorLevelSelector({
       </div>
 
       <div className="flex flex-wrap items-center gap-3">
-        <span className="text-sm text-foreground">Long text</span>
+        <span className="text-sm text-foreground">
+          Longer text per capability
+        </span>
         <button
           type="button"
           role="switch"
@@ -71,9 +73,6 @@ export function DescriptorLevelSelector({
             }`}
           />
         </button>
-        <span className="text-xs text-muted">
-          {longText ? "3 sentences per capability" : "2 sentences per capability"}
-        </span>
       </div>
     </fieldset>
   );
