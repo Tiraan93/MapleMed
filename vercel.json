@@ -1,0 +1,10 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": ".next",
+  "env": {
+    "NEXT_PUBLIC_SITE_URL": "@maplemed_site_url"
+  },
+  "ignore": [
+    "portfolio/**"
+  ]
+}
