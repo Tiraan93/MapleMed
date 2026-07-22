@@ -39,14 +39,14 @@ export default function Logo({
 /** The official MapleMedic mark inside a dark rounded badge. */
 function LogoBadge() {
   return (
-    <span className="inline-flex h-10 w-10 items-center justify-center overflow-hidden rounded-xl bg-navy-950 ring-1 ring-white/10">
+    <span className="relative inline-flex h-12 w-12 shrink-0 overflow-hidden rounded-xl bg-navy-950 ring-1 ring-white/10 sm:h-14 sm:w-14">
       <Image
         src="/maplemed-logo.png"
         alt="MapleMedic logo"
-        width={120}
-        height={180}
+        fill
+        sizes="(min-width: 640px) 56px, 48px"
         priority
-        className="h-9 w-auto object-contain"
+        className="object-cover object-center"
       />
     </span>
   );

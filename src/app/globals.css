@@ -54,3 +54,88 @@ body {
     @apply hover:-translate-y-1 hover:border-mist-300 hover:shadow-card;
   }
 }
+
+/* /gptool PortfolioAI loader phrase animation */
+.loader-phrase {
+  animation: loader-phrase 3s ease-in-out;
+}
+
+@keyframes loader-phrase {
+  0% {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  12% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  85% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+}
+
+/* Shared banner nav slide between MapleMedic and GPTool */
+.nav-slide-in-left {
+  animation: nav-slide-in-left 0.35s ease-out both;
+}
+
+.nav-slide-in-right {
+  animation: nav-slide-in-right 0.35s ease-out both;
+}
+
+.nav-slide-out-left {
+  animation: nav-slide-out-left 0.22s ease-in both;
+}
+
+.nav-slide-out-right {
+  animation: nav-slide-out-right 0.22s ease-in both;
+}
+
+@keyframes nav-slide-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes nav-slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes nav-slide-out-left {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-18px);
+  }
+}
+
+@keyframes nav-slide-out-right {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(18px);
+  }
+}

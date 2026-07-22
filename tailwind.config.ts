@@ -24,6 +24,7 @@ const config: Config = {
         },
         // Dark navy
         navy: {
+          DEFAULT: "#1f1832", // /gptool PortfolioAI text-navy
           50: "#f1f5f9",
           100: "#e2e8f0",
           200: "#cbd5e1",
@@ -51,6 +52,45 @@ const config: Config = {
         blush: {
           accent: "#fceeee",
         },
+        // /gptool (PortfolioAI) theme tokens
+        background: {
+          DEFAULT: "#f9f2fb",
+          alt: "#f2e8f8",
+        },
+        foreground: "#1f1832",
+        muted: {
+          DEFAULT: "#6c597b",
+          light: "#9e84ad",
+        },
+        card: {
+          DEFAULT: "#ffffff",
+          warm: "#f6effb",
+        },
+        border: {
+          DEFAULT: "#d9c5e5",
+          light: "#ede3f4",
+        },
+        accent: {
+          DEFAULT: "#b16aba",
+          dark: "#8f3e9a",
+          light: "#dfc2ec",
+          coral: "#b16aba",
+          "coral-dark": "#8a2b91",
+        },
+        cta: {
+          DEFAULT: "#b16aba",
+          hover: "#8a2b91",
+          soft: "#f4e6ff",
+        },
+        "success-bg": "#f4effa",
+        "success-border": "#d9c8e8",
+        "success-text": "#5a3d73",
+        "warning-bg": "#f7effa",
+        "warning-border": "#dbc6e7",
+        "warning-text": "#795aa2",
+        "error-bg": "#fbeaf7",
+        "error-border": "#e8c4dd",
+        "error-text": "#7f3f75",
       },
       fontFamily: {
         sans: [
@@ -63,6 +103,12 @@ const config: Config = {
           "Helvetica Neue",
           "Arial",
           "sans-serif",
+        ],
+        serif: [
+          "Georgia",
+          "Times New Roman",
+          "DM Serif Display",
+          "serif",
         ],
       },
       boxShadow: {
@@ -79,9 +125,16 @@ const config: Config = {
           "0%": { opacity: "0", transform: "translateY(12px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
         },
+        "loader-phrase": {
+          "0%": { opacity: "0", transform: "translateY(6px)" },
+          "12%": { opacity: "1", transform: "translateY(0)" },
+          "85%": { opacity: "1", transform: "translateY(0)" },
+          "100%": { opacity: "0", transform: "translateY(-6px)" },
+        },
       },
       animation: {
         "fade-up": "fade-up 0.5s ease-out both",
+        "loader-phrase": "loader-phrase 3s ease-in-out",
       },
     },
   },
