@@ -1,5 +1,5 @@
-import type { PortfolioReview } from "@/lib/schema";
-import { sanitizeGeneratedText } from "@/lib/sanitize";
+﻿import type { PortfolioReview } from "@portfolio/lib/schema";
+import { sanitizeGeneratedText } from "@portfolio/lib/sanitize";
 
 export function sanitizePortfolioReview(review: PortfolioReview): PortfolioReview {
   return {
@@ -27,3 +27,4 @@ export function collectDescriptorTexts(review: PortfolioReview): string[] {
     cap.evidence.map((item) => item.descriptor.trim()),
   );
 }
+

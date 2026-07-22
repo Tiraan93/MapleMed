@@ -6,10 +6,10 @@ import {
   CASES_DRAFT_STORAGE_KEY,
   initialCases,
   type CaseDraft,
-} from "@/components/CaseInput";
-import { ReviewPanel } from "@/components/ReviewPanel";
-import { GeneratingLoader } from "@/components/GeneratingLoader";
-import type { DescriptorLevel, PortfolioReview } from "@/lib/schema";
+} from "@portfolio/components/CaseInput";
+import { ReviewPanel } from "@portfolio/components/ReviewPanel";
+import { GeneratingLoader } from "@portfolio/components/GeneratingLoader";
+import type { DescriptorLevel, PortfolioReview } from "@portfolio/lib/schema";
 
 const RESULTS_STORAGE_KEY = "sca-portfolio-results";
 

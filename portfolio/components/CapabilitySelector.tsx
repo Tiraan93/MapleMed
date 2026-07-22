@@ -1,8 +1,8 @@
-"use client";
+﻿"use client";
 
 import { useEffect, useRef, useState } from "react";
-import { RCGP_CAPABILITY_NAMES } from "@/lib/rcgp-descriptors";
-import type { CapabilityMode } from "@/lib/schema";
+import { RCGP_CAPABILITY_NAMES } from "@portfolio/lib/rcgp-descriptors";
+import type { CapabilityMode } from "@portfolio/lib/schema";
 
 type CapabilitySelectorProps = {
   mode: CapabilityMode;
@@ -112,3 +112,4 @@ export function CapabilitySelector({
     </div>
   );
 }
+

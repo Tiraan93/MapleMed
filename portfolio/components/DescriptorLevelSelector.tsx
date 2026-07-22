@@ -1,7 +1,7 @@
-"use client";
+﻿"use client";
 
-import type { DescriptorLevel } from "@/lib/schema";
-import { DESCRIPTOR_LEVEL_LABELS } from "@/lib/rcgp-descriptors";
+import type { DescriptorLevel } from "@portfolio/lib/schema";
+import { DESCRIPTOR_LEVEL_LABELS } from "@portfolio/lib/rcgp-descriptors";
 
 const LEVELS: DescriptorLevel[] = [
   "needs_further_development",
@@ -50,3 +50,4 @@ export function DescriptorLevelSelector({
     </fieldset>
   );
 }
+

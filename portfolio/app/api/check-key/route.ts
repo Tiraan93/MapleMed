@@ -1,4 +1,4 @@
-import { ensureLLMNetworking } from "@/lib/llm-fetch";
+﻿import { ensureLLMNetworking } from "@portfolio/lib/llm-fetch";
 ensureLLMNetworking();
 import { NextResponse } from "next/server";
 import {
@@ -9,7 +9,7 @@ import {
   getLLMProviderLabel,
   getSetupMessage,
   hasLLMConfigured,
-} from "@/lib/llm";
+} from "@portfolio/lib/llm";
 
 export async function GET() {
   const provider = getLLMProvider();
@@ -58,3 +58,4 @@ export async function GET() {
     );
   }
 }
+

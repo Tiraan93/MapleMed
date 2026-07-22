@@ -1,10 +1,10 @@
-import {
+﻿import {
   findCapability,
   isExactDescriptor,
   normalizeCapabilityName,
   resolveDescriptor,
-} from "@/lib/rcgp-descriptors";
-import type { LlmPortfolioReview, PortfolioReview } from "@/lib/schema";
+} from "@portfolio/lib/rcgp-descriptors";
+import type { LlmPortfolioReview, PortfolioReview } from "@portfolio/lib/schema";
 
 export function resolveLlmPortfolioReview(llm: LlmPortfolioReview): PortfolioReview {
   return {
@@ -93,3 +93,4 @@ export function collectDuplicateDescriptorErrors(
 
   return errors;
 }
+

@@ -1,4 +1,4 @@
-/** @deprecated Import from `@/lib/llm` instead. Kept for backwards compatibility. */
+﻿/** @deprecated Import from `@/lib/llm` instead. Kept for backwards compatibility. */
 export {
   formatLLMError as formatOpenAIError,
   getLLMClient as getOpenAIClient,
@@ -9,4 +9,5 @@ export {
   hasLLMConfigured as hasOpenAIKey,
   parseJsonFromModel,
   supportsJsonResponseFormat,
-} from "@/lib/llm";
+} from "@portfolio/lib/llm";
+

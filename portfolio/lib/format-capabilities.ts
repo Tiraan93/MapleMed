@@ -1,5 +1,5 @@
-import type { PortfolioReview } from "@/lib/schema";
-import { DESCRIPTOR_LEVEL_LABELS } from "@/lib/rcgp-descriptors";
+﻿import type { PortfolioReview } from "@portfolio/lib/schema";
+import { DESCRIPTOR_LEVEL_LABELS } from "@portfolio/lib/rcgp-descriptors";
 
 export function formatCapabilitiesForDisplay(review: PortfolioReview): string {
   return review.capabilities
@@ -18,3 +18,4 @@ export function formatCapabilitiesForDisplay(review: PortfolioReview): string {
 export function formatCapabilitiesForCopy(review: PortfolioReview): string {
   return formatCapabilitiesForDisplay(review);
 }
+

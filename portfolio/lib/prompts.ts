@@ -1,12 +1,12 @@
-import type { CapabilityMode, DescriptorLevel } from "@/lib/schema";
-import { BANNED_WORDS_LIST } from "@/lib/sanitize";
+﻿import type { CapabilityMode, DescriptorLevel } from "@portfolio/lib/schema";
+import { BANNED_WORDS_LIST } from "@portfolio/lib/sanitize";
 import {
   buildDescriptorPromptSection,
   formatRetrySection,
   formatUsedDescriptorsSection,
   RCGP_CAPABILITY_NAMES,
   SYSTEM_TEAM_GUIDANCE,
-} from "@/lib/rcgp-descriptors";
+} from "@portfolio/lib/rcgp-descriptors";
 
 const BANNED_WORDS = BANNED_WORDS_LIST.join(", ");
 
@@ -165,3 +165,4 @@ ${instruction}
 
 Return only the improved ${sectionLabel} text in first person.`;
 }
+

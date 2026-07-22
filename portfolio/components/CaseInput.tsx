@@ -1,9 +1,9 @@
-"use client";
+﻿"use client";
 
 import { useEffect, useState } from "react";
-import { CapabilitySelector } from "@/components/CapabilitySelector";
-import { DescriptorLevelSelector } from "@/components/DescriptorLevelSelector";
-import type { CapabilityMode, DescriptorLevel } from "@/lib/schema";
+import { CapabilitySelector } from "@portfolio/components/CapabilitySelector";
+import { DescriptorLevelSelector } from "@portfolio/components/DescriptorLevelSelector";
+import type { CapabilityMode, DescriptorLevel } from "@portfolio/lib/schema";
 
 export const CASES_DRAFT_STORAGE_KEY = "sca-portfolio-cases-draft";
 const STORAGE_KEY = CASES_DRAFT_STORAGE_KEY;
@@ -202,3 +202,4 @@ export function CaseInput({
 export function initialCases(): CaseDraft[] {
   return [createCase()];
 }
+

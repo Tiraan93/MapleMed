@@ -1,8 +1,8 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
-import type { PortfolioReview } from "@/lib/schema";
-import { DESCRIPTOR_LEVEL_LABELS } from "@/lib/rcgp-descriptors";
+import type { PortfolioReview } from "@portfolio/lib/schema";
+import { DESCRIPTOR_LEVEL_LABELS } from "@portfolio/lib/rcgp-descriptors";
 
 type Capability = PortfolioReview["capabilities"][number];
 
@@ -170,3 +170,4 @@ export function CapabilityEvidenceBlock({
     </div>
   );
 }
+

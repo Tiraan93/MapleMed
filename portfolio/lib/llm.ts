@@ -1,6 +1,6 @@
-import OpenAI from "openai";
+﻿import OpenAI from "openai";
 import { ZodError } from "zod";
-import { allowInsecureLLMSSL, ensureLLMNetworking } from "@/lib/llm-fetch";
+import { allowInsecureLLMSSL, ensureLLMNetworking } from "@portfolio/lib/llm-fetch";
 
 export type LLMProvider = "openrouter" | "groq" | "openai" | "ollama";
 
@@ -274,3 +274,4 @@ export async function parseJsonFromModel<T>(
     throw error;
   }
 }
+

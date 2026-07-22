@@ -1,9 +1,9 @@
-import type { Metadata } from "next";
-import { Header } from "@/components/Header";
+﻿import type { Metadata } from "next";
+import { Header } from "@portfolio/components/Header";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "SCA Portfolio AI — GP Training Case Reviews",
+  title: "SCA Portfolio AI â€” GP Training Case Reviews",
   description:
     "Generate structured GP portfolio case reviews for SCA and RCGP training. Describe your case and get capabilities, learning needs, and reflection in seconds.",
 };
@@ -28,3 +28,4 @@ export default function RootLayout({
     </html>
   );
 }
+

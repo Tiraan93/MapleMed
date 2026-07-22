@@ -1,8 +1,8 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
-import type { PortfolioReview } from "@/lib/schema";
-import { formatCapabilitiesForCopy } from "@/lib/format-capabilities";
+import type { PortfolioReview } from "@portfolio/lib/schema";
+import { formatCapabilitiesForCopy } from "@portfolio/lib/format-capabilities";
 import { ReviewSection } from "./ReviewSection";
 import { CapabilityEvidenceBlock } from "./CapabilityEvidenceBlock";
 
@@ -29,7 +29,7 @@ export function ReviewPanel({
   if (!review) {
     return (
       <div className="flex h-full min-h-[420px] flex-col items-center justify-center rounded-2xl border border-dashed border-border bg-card/50 p-8 text-center">
-        <div className="mb-4 text-4xl opacity-40">📋</div>
+        <div className="mb-4 text-4xl opacity-40">ðŸ“‹</div>
         <h2 className="font-serif text-xl font-semibold text-navy">Your review will appear here</h2>
         <p className="mt-2 max-w-sm text-sm text-muted">
           Enter case notes, choose descriptor columns, and generate. Each capability uses
@@ -212,7 +212,7 @@ export function ReviewPanel({
       <div className="flex flex-1 flex-col gap-4 overflow-y-auto">
         <ReviewSection
           title="Brief Description"
-          icon="📝"
+          icon="ðŸ“"
           content={review.briefDescription}
           onCopy={() => copyText(review.briefDescription)}
           canImprove
@@ -225,7 +225,7 @@ export function ReviewPanel({
         <section className="rounded-xl border border-border-light bg-background-alt/50 p-5">
           <div className="mb-3 flex items-center justify-between gap-3">
             <h3 className="flex items-center gap-2 text-sm font-semibold text-navy">
-              <span aria-hidden>🎯</span>
+              <span aria-hidden>ðŸŽ¯</span>
               Capabilities
             </h3>
             <button
@@ -266,14 +266,14 @@ export function ReviewPanel({
 
         <ReviewSection
           title="Learning Needs"
-          icon="📚"
+          icon="ðŸ“š"
           content={review.learningNeeds.map((need, index) => `${index + 1}. ${need}`).join("\n")}
           onCopy={() => copyText(review.learningNeeds.join("\n"))}
         />
 
         <ReviewSection
           title="Reflection"
-          icon="💭"
+          icon="ðŸ’­"
           content={review.reflection}
           onCopy={() => copyText(review.reflection)}
           canImprove
@@ -298,3 +298,4 @@ export function ReviewPanel({
     </div>
   );
 }
+

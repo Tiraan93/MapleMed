@@ -25,6 +25,9 @@
     "paths": {
       "@/*": [
         "./src/*"
+      ],
+      "@portfolio/*": [
+        "./portfolio/*"
       ]
     }
   },
@@ -36,7 +39,6 @@
     ".next/dev/types/**/*.ts"
   ],
   "exclude": [
-    "node_modules",
-    "portfolio"
+    "node_modules"
   ]
 }

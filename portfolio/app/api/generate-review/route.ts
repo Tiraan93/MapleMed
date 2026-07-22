@@ -1,11 +1,11 @@
-import { ensureLLMNetworking } from "@/lib/llm-fetch";
+﻿import { ensureLLMNetworking } from "@portfolio/lib/llm-fetch";
 ensureLLMNetworking();
 import { NextRequest, NextResponse } from "next/server";
 import type OpenAI from "openai";
 import {
   buildGenerateReviewSystemPrompt,
   buildGenerateReviewUserPrompt,
-} from "@/lib/prompts";
+} from "@portfolio/lib/prompts";
 import {
   formatLLMError,
   extractCompletionText,
@@ -16,24 +16,24 @@ import {
   getStructuredCompletionParams,
   hasLLMConfigured,
   parseJsonFromModel,
-} from "@/lib/llm";
-import { rateLimit, tooManyRequestsResponse } from "@/lib/rate-limit";
-import { isAllowedOrigin } from "@/lib/security";
+} from "@portfolio/lib/llm";
+import { rateLimit, tooManyRequestsResponse } from "@portfolio/lib/rate-limit";
+import { isAllowedOrigin } from "@portfolio/lib/security";
 import {
   collectDuplicateDescriptorErrors,
   resolveLlmPortfolioReview,
-} from "@/lib/resolve-portfolio-review";
+} from "@portfolio/lib/resolve-portfolio-review";
 import {
   collectDescriptorTexts,
   sanitizePortfolioReview,
-} from "@/lib/sanitize-review";
-import type { CapabilityMode, DescriptorLevel, PortfolioReview } from "@/lib/schema";
+} from "@portfolio/lib/sanitize-review";
+import type { CapabilityMode, DescriptorLevel, PortfolioReview } from "@portfolio/lib/schema";
 import { ZodError } from "zod";
 import {
   buildDemoReview,
   generateReviewRequestSchema,
   llmPortfolioReviewSchema,
-} from "@/lib/schema";
+} from "@portfolio/lib/schema";
 
 const MAX_ATTEMPTS = 2;
 
@@ -183,7 +183,7 @@ export async function POST(request: NextRequest) {
       providerLabel: getLLMProviderLabel(provider),
     });
   } catch (error) {
-    // Invalid request body → clean 400 (don't leak the raw Zod error blob).
+    // Invalid request body â†’ clean 400 (don't leak the raw Zod error blob).
     if (error instanceof ZodError) {
       return NextResponse.json(
         { error: error.errors[0]?.message ?? "Invalid request.", demo: !hasLLMConfigured(), provider: getLLMProvider() },
@@ -218,3 +218,4 @@ export async function POST(request: NextRequest) {
     );
   }
 }
+
