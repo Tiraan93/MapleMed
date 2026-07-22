@@ -1,3 +1,3 @@
 'use client';
 
-export { default } from '../../../portfolio/app/portfolio/page';
+export { default } from '@portfolio/app/portfolio/page';
