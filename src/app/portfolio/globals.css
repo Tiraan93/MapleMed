@@ -1,4 +1,6 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* Fonts: bundled system stack (avoids Google Fonts fetch blocked by local SSL) */
 :root {
