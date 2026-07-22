@@ -1,11 +1,11 @@
-﻿import { ensureLLMNetworking } from "@portfolio/lib/llm-fetch";
+﻿import { ensureLLMNetworking } from "@portfolio-lib/lib/llm-fetch";
 ensureLLMNetworking();
 import { NextRequest, NextResponse } from "next/server";
 import type OpenAI from "openai";
 import {
   buildGenerateReviewSystemPrompt,
   buildGenerateReviewUserPrompt,
-} from "@portfolio/lib/prompts";
+} from "@portfolio-lib/lib/prompts";
 import {
   formatLLMError,
   extractCompletionText,
@@ -16,24 +16,24 @@ import {
   getStructuredCompletionParams,
   hasLLMConfigured,
   parseJsonFromModel,
-} from "@portfolio/lib/llm";
-import { rateLimit, tooManyRequestsResponse } from "@portfolio/lib/rate-limit";
-import { isAllowedOrigin } from "@portfolio/lib/security";
+} from "@portfolio-lib/lib/llm";
+import { rateLimit, tooManyRequestsResponse } from "@portfolio-lib/lib/rate-limit";
+import { isAllowedOrigin } from "@portfolio-lib/lib/security";
 import {
   collectDuplicateDescriptorErrors,
   resolveLlmPortfolioReview,
-} from "@portfolio/lib/resolve-portfolio-review";
+} from "@portfolio-lib/lib/resolve-portfolio-review";
 import {
   collectDescriptorTexts,
   sanitizePortfolioReview,
-} from "@portfolio/lib/sanitize-review";
-import type { CapabilityMode, DescriptorLevel, PortfolioReview } from "@portfolio/lib/schema";
+} from "@portfolio-lib/lib/sanitize-review";
+import type { CapabilityMode, DescriptorLevel, PortfolioReview } from "@portfolio-lib/lib/schema";
 import { ZodError } from "zod";
 import {
   buildDemoReview,
   generateReviewRequestSchema,
   llmPortfolioReviewSchema,
-} from "@portfolio/lib/schema";
+} from "@portfolio-lib/lib/schema";
 
 const MAX_ATTEMPTS = 2;
 
@@ -218,4 +218,5 @@ export async function POST(request: NextRequest) {
     );
   }
 }
+
 

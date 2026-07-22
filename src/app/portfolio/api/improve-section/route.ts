@@ -1,21 +1,21 @@
-﻿import { ensureLLMNetworking } from "@portfolio/lib/llm-fetch";
+﻿import { ensureLLMNetworking } from "@portfolio-lib/lib/llm-fetch";
 ensureLLMNetworking();
 import { NextRequest, NextResponse } from "next/server";
 import {
   buildImproveSectionUserPrompt,
   IMPROVE_SECTION_SYSTEM_PROMPT,
-} from "@portfolio/lib/prompts";
+} from "@portfolio-lib/lib/prompts";
 import {
   formatLLMError,
   getLLMClient,
   getLLMModel,
   getSetupMessage,
   hasLLMConfigured,
-} from "@portfolio/lib/llm";
-import { rateLimit, tooManyRequestsResponse } from "@portfolio/lib/rate-limit";
-import { isAllowedOrigin } from "@portfolio/lib/security";
-import { sanitizeGeneratedText } from "@portfolio/lib/sanitize";
-import { improveSectionRequestSchema, improveSectionResponseSchema } from "@portfolio/lib/schema";
+} from "@portfolio-lib/lib/llm";
+import { rateLimit, tooManyRequestsResponse } from "@portfolio-lib/lib/rate-limit";
+import { isAllowedOrigin } from "@portfolio-lib/lib/security";
+import { sanitizeGeneratedText } from "@portfolio-lib/lib/sanitize";
+import { improveSectionRequestSchema, improveSectionResponseSchema } from "@portfolio-lib/lib/schema";
 import { ZodError } from "zod";
 
 export async function POST(request: NextRequest) {
@@ -80,4 +80,5 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: message }, { status });
   }
 }
+
 

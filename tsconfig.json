@@ -26,8 +26,8 @@
       "@/*": [
         "./src/*"
       ],
-      "@portfolio/*": [
-        "./portfolio/*"
+      "@portfolio-lib/*": [
+        "./src/app/portfolio/*"
       ]
     }
   },
