@@ -6,8 +6,6 @@ export default function Hero() {
       id="top"
       className="relative overflow-hidden bg-navy-900 text-white"
     >
-      {/* Background: the MapleMedic logo, dimmed, with a navy gradient overlay
-          so the headline stays readable. */}
       <div aria-hidden="true" className="pointer-events-none absolute inset-0">
         <Image
           src="/maplemed-logo.png"
@@ -23,31 +21,56 @@ export default function Hero() {
 
       <div className="container-page relative pb-20 pt-32 sm:pb-24 lg:pb-32 lg:pt-40">
         <div className="max-w-3xl animate-fade-up">
-          <h1 className="text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl lg:text-6xl">
-            Adventure &amp; Opportunity: on{" "}
-            <span className="italic text-maple-400">your</span> terms
+          <p className="text-sm font-semibold text-maple-400">
+            By NHS Doctors, for NHS Doctors
+          </p>
+
+          <h1 className="mt-4 text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl lg:text-6xl">
+            MapleMedic
           </h1>
 
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-mist-200">
-            The only platform that lets UK GPs test Canada through locum
-            placements before making any permanent move &mdash; with proper
-            support and a real way back if you need it. We believe that once you
-            experience what MapleMedic has to offer, you&rsquo;ll want to grow
-            with us for the long term.
+            We match NHS- trained doctors with
+            Canadian clinics we&apos;ve visited in person and we trust. Then we
+            guide you through licensing, give you general guidance on your work
+            permit, and help your family move. Our support is free for you.
           </p>
 
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
-            <a href="#join" className="btn-primary">
-              Join the mailing list
-            </a>
-            <a href="#mission" className="btn-ghost-light">
-              Learn about MapleMedic
-            </a>
+          <p className="mt-4 max-w-2xl text-lg leading-relaxed text-mist-200">
+            Founded by Doctors Trained in the NHS with first hand experience of
+            relocating to Canada.
+          </p>
+
+          <p className="mt-6 text-lg italic text-white">
+            Adventure &amp; Opportunity: on your terms.
+          </p>
+
+          <div className="mt-8 flex flex-col gap-6 sm:flex-row sm:flex-wrap sm:items-end [&_a]:whitespace-nowrap">
+            <div className="flex flex-col items-center">
+              <p className="mb-2 text-sm font-semibold text-white">
+                I am a Doctor looking for work
+              </p>
+              <a href="#for-gps" className="btn-primary">
+                See how it works
+              </a>
+            </div>
+            <div className="flex flex-col items-center">
+              <p className="mb-2 text-sm font-semibold text-white">
+                I run a clinic in Canada
+              </p>
+              <a href="#for-clinics" className="btn-ghost-light">
+                Hire a Doctor
+              </a>
+            </div>
+            <div>
+              <a href="mailto:admin@maplemedic.com" className="btn-ghost-light">
+                Contact us: admin@maplemedic.com
+              </a>
+            </div>
           </div>
         </div>
       </div>
 
-      {/* Bottom wave divider into the light page */}
       <div aria-hidden="true" className="relative">
         <svg
           viewBox="0 0 1440 80"

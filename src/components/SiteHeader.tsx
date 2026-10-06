@@ -6,10 +6,10 @@ import { usePathname } from "next/navigation";
 import Logo from "@/components/Logo";
 
 const MAPLE_LINKS = [
-  { label: "Mission + Vision", href: "/#mission" },
-  { label: "The Difference", href: "/#difference" },
-  { label: "How It Works", href: "/#how-it-works" },
-  { label: "Our Story", href: "/#our-story" },
+  { label: "For Doctors", href: "/#for-gps" },
+  { label: "For Canadian clinics", href: "/#for-clinics" },
+  { label: "Founders", href: "/#founders" },
+  { label: "Why we built MapleMedic", href: "/#why-we-built" },
   { label: "FAQ", href: "/#faq" },
   { label: "Join", href: "/#join" },
   { label: "GPTool", href: "/gptool" },
@@ -115,13 +115,25 @@ export default function SiteHeader() {
                   : link.href === "/"
                     ? pathname === "/"
                     : false;
+            const className = `text-sm font-medium transition-colors hover:text-maple-700 ${
+              active ? "text-maple-700" : "text-navy-600"
+            }`;
+            if (link.href.includes("#")) {
+              return (
+                <a
+                  key={`${displayMode}-${link.href}-${link.label}`}
+                  href={link.href}
+                  className={className}
+                >
+                  {link.label}
+                </a>
+              );
+            }
             return (
               <Link
                 key={`${displayMode}-${link.href}-${link.label}`}
                 href={link.href}
-                className={`text-sm font-medium transition-colors hover:text-maple-700 ${
-                  active ? "text-maple-700" : "text-navy-600"
-                }`}
+                className={className}
               >
                 {link.label}
               </Link>
@@ -131,9 +143,9 @@ export default function SiteHeader() {
 
         <div className={`hidden lg:block ${slideClass}`}>
           {displayMode === "maple" ? (
-            <Link href="/#join" className="btn-primary">
-              Register Interest
-            </Link>
+            <a href="/#join" className="btn-primary">
+              Join the mailing list
+            </a>
           ) : (
             <span className="sr-only">Tool navigation</span>
           )}
@@ -175,24 +187,35 @@ export default function SiteHeader() {
           className="border-t border-mist-200 bg-white lg:hidden"
         >
           <nav aria-label="Mobile" className={`container-page flex flex-col py-4 ${slideClass}`}>
-            {links.map((link) => (
-              <Link
-                key={`mobile-${displayMode}-${link.href}-${link.label}`}
-                href={link.href}
-                onClick={() => setMenuOpen(false)}
-                className="rounded-lg px-2 py-3 text-base font-medium text-navy-700 transition-colors hover:bg-mist-100 hover:text-maple-700"
-              >
-                {link.label}
-              </Link>
-            ))}
+            {links.map((link) =>
+              link.href.includes("#") ? (
+                <a
+                  key={`mobile-${displayMode}-${link.href}-${link.label}`}
+                  href={link.href}
+                  onClick={() => setMenuOpen(false)}
+                  className="rounded-lg px-2 py-3 text-base font-medium text-navy-700 transition-colors hover:bg-mist-100 hover:text-maple-700"
+                >
+                  {link.label}
+                </a>
+              ) : (
+                <Link
+                  key={`mobile-${displayMode}-${link.href}-${link.label}`}
+                  href={link.href}
+                  onClick={() => setMenuOpen(false)}
+                  className="rounded-lg px-2 py-3 text-base font-medium text-navy-700 transition-colors hover:bg-mist-100 hover:text-maple-700"
+                >
+                  {link.label}
+                </Link>
+              )
+            )}
             {displayMode === "maple" && (
-              <Link
+              <a
                 href="/#join"
                 onClick={() => setMenuOpen(false)}
                 className="btn-primary mt-3 w-full"
               >
-                Register Interest
-              </Link>
+                Join the mailing list
+              </a>
             )}
           </nav>
         </div>

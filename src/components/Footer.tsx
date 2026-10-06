@@ -10,17 +10,17 @@ export default function Footer() {
           <div className="max-w-sm">
             <Logo variant="light" />
             <p className="mt-4 text-sm leading-relaxed text-mist-300">
-              Developing modern clinics in Canada with UK-trained medical talent.
+              By NHS doctors, for NHS doctors.
             </p>
             <a
-              href="mailto:tiraan@maplemedic.com"
+              href="mailto:admin@maplemedic.com"
               className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-white transition-colors hover:text-maple-400"
             >
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                 <rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" strokeWidth="1.7" />
                 <path d="m4 7 8 6 8-6" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
-              tiraan@maplemedic.com
+              admin@maplemedic.com
             </a>
           </div>
 
@@ -29,12 +29,12 @@ export default function Footer() {
               Explore
             </h3>
             <ul className="mt-4 space-y-2.5 text-sm">
-              <li><a href="/#mission" className="transition-colors hover:text-white">Mission + Vision</a></li>
-              <li><a href="/#difference" className="transition-colors hover:text-white">The MapleMedic Difference</a></li>
-              <li><a href="/#how-it-works" className="transition-colors hover:text-white">How It Works</a></li>
-              <li><a href="/#our-story" className="transition-colors hover:text-white">Our Story</a></li>
+              <li><a href="/#for-gps" className="transition-colors hover:text-white">For Doctors</a></li>
+              <li><a href="/#for-clinics" className="transition-colors hover:text-white">For Canadian clinics</a></li>
+              <li><a href="/#founders" className="transition-colors hover:text-white">Meet the founders</a></li>
+              <li><a href="/#why-we-built" className="transition-colors hover:text-white">Why we built MapleMedic</a></li>
               <li><a href="/#faq" className="transition-colors hover:text-white">FAQ</a></li>
-              <li><a href="/#join" className="transition-colors hover:text-white">Register Interest</a></li>
+              <li><a href="/#join" className="transition-colors hover:text-white">Join the mailing list</a></li>
             </ul>
           </div>
 
@@ -44,17 +44,16 @@ export default function Footer() {
             </h3>
             <ul className="mt-4 space-y-2.5 text-sm">
               <li><a href="/privacy" className="transition-colors hover:text-white">Privacy Policy</a></li>
-              <li><a href="/privacy#terms" className="transition-colors hover:text-white">Terms</a></li>
-              <li><a href="mailto:tiraan@maplemedic.com" className="transition-colors hover:text-white">Contact</a></li>
+              <li><a href="mailto:admin@maplemedic.com" className="transition-colors hover:text-white">Contact</a></li>
             </ul>
           </div>
         </div>
 
         <div className="mt-12 border-t border-navy-800 pt-8">
           <p className="text-xs leading-relaxed text-mist-300">
-            MapleMedic is not a medical regulator, immigration adviser or government
-            body. Information provided is general only and does not guarantee
-            employment, licensing or immigration outcomes.
+            MapleMedic is a recruitment company. We are not a medical regulator or
+            an immigration adviser. We cannot guarantee a job offer, Canadian
+            medical registration, a work permit or any immigration outcome.
           </p>
           <p className="mt-4 text-xs text-mist-300">
             &copy; {year} MapleMedic. All rights reserved.

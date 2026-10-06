@@ -1,9 +1,8 @@
 const POINTS = [
-  "MapleMedic is not a medical regulator.",
-  "MapleMedic is not an immigration adviser.",
-  "Information on the website is general only.",
-  "Official licensing, immigration and employment requirements must be checked with the relevant authorities.",
-  "Mailing list subscribers can unsubscribe at any time.",
+  "MapleMedic is a recruitment company. We are not a medical regulator or an immigration adviser.",
+  "We cannot guarantee a job offer, Canadian medical registration, a work permit or any immigration outcome.",
+  "Regulators and government authorities make registration and immigration decisions.",
+  "Our information is general guidance. Always check requirements with the official bodies, and get professional advice where appropriate.",
 ];
 
 export default function Trust() {
@@ -11,17 +10,9 @@ export default function Trust() {
     <section className="section bg-navy-900 text-white">
       <div className="container-page">
         <div className="mx-auto max-w-3xl text-center">
-          <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-mist-200">
-            Trust &amp; compliance
-          </span>
-          <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-4xl">
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
             Responsible and transparent
           </h2>
-          <p className="mt-4 text-lg leading-relaxed text-mist-200">
-            We are clear about our role. MapleMedic shares general information and
-            keeps interested people updated — official decisions always rest with
-            the relevant authorities.
-          </p>
         </div>
 
         <ul className="mx-auto mt-10 grid max-w-4xl gap-3 sm:grid-cols-2">

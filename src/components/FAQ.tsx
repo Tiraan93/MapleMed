@@ -5,27 +5,34 @@ import { useState } from "react";
 const FAQS = [
   {
     q: "What is MapleMedic?",
-    a: "MapleMedic is a healthcare company developing modern clinics in Canada and recruiting UK-qualified and international medical professionals to support high-quality patient care.",
+    a: "A company founded by GPs that recruits UK-qualified GPs into clinics across Canada. We're starting in Ontario, with British Columbia and other provinces to follow.",
   },
   {
     q: "Is MapleMedic a recruitment agency?",
-    a: "MapleMedic is not only a recruitment agency. The company is focused on building and operating its own clinics in Canada and recruiting doctors to join MapleMedic clinics.",
+    a: "Yes. The difference is how we work. We're NHS doctors: one is Canadian and going through licensing; the other is a GP trainee planning the same move. We visit every clinic in person. We check that your values fit the clinic's. And everything we do for you is free.",
   },
   {
-    q: "Can MapleMedic guarantee a job in Canada?",
-    a: "No. MapleMedic can share updates and consider candidates for future opportunities, but employment depends on clinic needs, candidate suitability and eligibility checks.",
+    q: "Do I pay anything?",
+    a: "Our support is free. Everything we do for GPs, including licensing guidance, work permit guidance, relocation and family support, costs you nothing, because clinics pay us. You pay the official government fees yourself: your work permit application, biometrics, and Canadian medical registration and exam fees. Immigration lawyer fees are commonly paid by the clinic that sponsors you. Some clinics, often in rural areas, also help with relocation costs, but this varies, and we'll tell you what's on offer before you commit.",
   },
   {
-    q: "Can MapleMedic guarantee Canadian medical registration?",
-    a: "No. Medical registration is handled by the relevant Canadian medical regulatory authorities and varies by province or territory.",
+    q: "Will you guarantee me a job?",
+    a: "No. We'll work hard to find the right clinic for you, but hiring decisions are made by the clinics.",
   },
   {
-    q: "Can MapleMedic help with visas or immigration?",
-    a: "MapleMedic may share general information, but immigration advice and decisions must come from official sources or qualified immigration professionals.",
+    q: "Can you guarantee Canadian medical registration?",
+    a: "No. Provincial medical regulators make those decisions. We help you prepare, but we are not a regulator.",
+  },
+  {
+    q: "Can you guarantee my work permit or visa?",
+    a: "No. The Canadian government makes immigration decisions. We can explain how the process works in general terms, but we are not immigration advisers and we don't give immigration advice. For specific questions we signpost you to immigration lawyers we work with. Your sponsoring clinic works with immigration lawyers on your sponsorship.",
   },
   {
     q: "Who should join the mailing list?",
-    a: "UK-qualified doctors, international doctors, Canadian healthcare professionals and potential partners interested in MapleMedic’s future clinic plans can register for updates.",
+    a: [
+      "Any UK-trained GP curious about working in Canada, whether you're ready to move soon or just starting to think about it.",
+      "Canadian Clinic looking to hire expert physicians that will stay with you long term.",
+    ],
   },
 ];
 
@@ -33,16 +40,12 @@ export default function FAQ() {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="section bg-white">
+    <section id="faq" className="section scroll-mt-24 bg-white">
       <div className="container-page">
         <div className="mx-auto max-w-2xl text-center">
-          <span className="eyebrow">FAQ</span>
-          <h2 className="mt-4 text-3xl font-bold tracking-tight text-navy-900 sm:text-4xl">
-            Frequently asked questions
+          <h2 className="text-3xl font-bold tracking-tight text-navy-900 sm:text-4xl">
+            FAQ
           </h2>
-          <p className="mt-4 text-lg leading-relaxed text-navy-600">
-            Clear, honest answers about what MapleMedic is — and what it is not.
-          </p>
         </div>
 
         <div className="mx-auto mt-10 max-w-3xl space-y-3">
@@ -84,11 +87,13 @@ export default function FAQ() {
                   role="region"
                   aria-labelledby={`faq-trigger-${index}`}
                   hidden={!isOpen}
-                  className="px-5 pb-5 sm:px-6"
+                  className="space-y-3 px-5 pb-5 sm:px-6"
                 >
-                  <p className="text-base leading-relaxed text-navy-600">
-                    {item.a}
-                  </p>
+                  {(Array.isArray(item.a) ? item.a : [item.a]).map((paragraph) => (
+                    <p key={paragraph} className="text-base leading-relaxed text-navy-600">
+                      {paragraph}
+                    </p>
+                  ))}
                 </div>
               </div>
             );

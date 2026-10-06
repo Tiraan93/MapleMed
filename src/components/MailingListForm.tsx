@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 
 const ROLE_OPTIONS = [
   { value: "", label: "Select your role…" },
@@ -132,9 +133,9 @@ export default function MailingListForm() {
           You&apos;re on the list
         </h3>
         <p className="mt-2 text-navy-600">
-          Thanks for registering your interest in MapleMedic. We&apos;ll be in
-          touch with updates on our clinics and recruitment plans. You can
-          unsubscribe at any time.
+          Updates on opportunities, guidance on licensing and work permits, and
+          what life as a GP in Canada is really like. You can unsubscribe at any
+          time.
         </p>
         <button
           type="button"
@@ -253,7 +254,10 @@ export default function MailingListForm() {
           />
           <span className="text-sm leading-relaxed text-navy-600">
             I agree to receive email updates from MapleMedic. I understand I can
-            unsubscribe at any time.
+            unsubscribe at any time.{" "}
+            <Link href="/privacy" className="font-medium text-maple-700 underline hover:text-maple-800">
+              Privacy Policy
+            </Link>
           </span>
         </label>
         {errors.consent && (
@@ -282,7 +286,7 @@ export default function MailingListForm() {
             Submitting…
           </>
         ) : (
-          "Join the mailing list"
+          "Join"
         )}
       </button>
 

@@ -12,15 +12,15 @@ const SITE_URL = "https://maplemedic.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "MapleMedic | Modern Clinics in Canada with UK-Trained Doctors",
+  title: "MapleMedic | Practise in Canada. With doctors who know the way.",
   description:
-    "MapleMedic is developing healthcare clinics in Canada and recruiting UK-qualified doctors and international medical professionals to support high-quality patient care.",
+    "We match Canada/UK/Ireland/Australia/US- trained doctors with Canadian clinics we've visited in person and we trust. Then we guide you through licensing, give you general guidance on your work permit, and help your family move. Our support is free for you.",
   keywords: [
     "MapleMedic",
-    "Canada clinics",
-    "UK-trained doctors",
-    "medical careers Canada",
-    "international doctors Canada",
+    "UK-trained GPs",
+    "Canadian clinics",
+    "GP recruitment",
+    "work in Canada",
     "healthcare recruitment",
   ],
   authors: [{ name: "MapleMedic" }],
@@ -36,15 +36,15 @@ export const metadata: Metadata = {
     type: "website",
     url: SITE_URL,
     siteName: "MapleMedic",
-    title: "MapleMedic | Modern Clinics in Canada with UK-Trained Doctors",
+    title: "MapleMedic | Practise in Canada. With doctors who know the way.",
     description:
-      "MapleMedic is developing healthcare clinics in Canada and recruiting UK-qualified doctors and international medical professionals to support high-quality patient care.",
+      "We match Canada/UK/Ireland/Australia/US- trained doctors with Canadian clinics we've visited in person and we trust. Then we guide you through licensing, give you general guidance on your work permit, and help your family move. Our support is free for you.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "MapleMedic | Modern Clinics in Canada with UK-Trained Doctors",
+    title: "MapleMedic | Practise in Canada. With doctors who know the way.",
     description:
-      "MapleMedic is developing healthcare clinics in Canada and recruiting UK-qualified doctors and international medical professionals to support high-quality patient care.",
+      "We match Canada/UK/Ireland/Australia/US- trained doctors with Canadian clinics we've visited in person and we trust. Then we guide you through licensing, give you general guidance on your work permit, and help your family move. Our support is free for you.",
   },
   robots: {
     index: true,

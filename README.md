@@ -1,8 +1,8 @@
 # MapleMed
 
-A healthcare platform with a professional landing site and portfolio system for **MapleMed** — a healthcare company developing modern clinics in Canada and building a team of UK-qualified and internationally trained doctors.
+A healthcare platform with a professional landing site and portfolio system for **MapleMedic** — a company founded by GPs that recruits UK-qualified GPs into clinics across Canada.
 
-> **Tagline:** Building modern clinics in Canada with UK-trained medical talent.
+> **Tagline:** By NHS doctors, for NHS doctors.
 
 ## Project Structure
 
@@ -123,4 +123,4 @@ In development, if env vars are not set, the form returns a mock success respons
 
 ## Legal Note
 
-MapleMed operates its own clinics and recruits doctors to the MapleMed team. The site does not guarantee employment, medical registration, visas, or relocation—users are directed to official authorities for licensing and immigration matters.
+MapleMedic is a recruitment company. It is not a medical regulator or an immigration adviser, and it does not guarantee a job offer, Canadian medical registration, a work permit or any immigration outcome.
